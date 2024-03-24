@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 🚨 Tutorial
 
-## Getting Started
+This repository contains the corresponding tutorial available on our YouTube channel, <a href="https://www.youtube.com/@CodeScrapperOfficial/videos" target="_blank"><b>Code Scrapper</b></a>.
 
-First, run the development server:
+## <a name="introduction">🤖 Introduction</a>
+
+Our Car rental is a streamlined project management tool designed to enhance productivity and team collaboration. It offers intuitive free map location, stripe integration and smtp email send capabilities to adapt to various workflows. Ideal for individuals and teams looking for an efficient way to online order car for rent and pay.
+
+## <a name="tech-stack">Tech Stack</a>
+
+- Next.js
+- MongoDB
+- Mongoose
+- free map location
+- stripe
+- SMTP
+- Shadcn
+- Tailwind Css
+
+## <a name="quick-start">Integration and Installation Process</a>
+
+Follow these steps to set up the project locally on your device.
+
+**Prerequisites**
+
+Make sure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/)
+- [Git](https://git-scm.com/)
+
+**Clone this Project**
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/CodeScrapper1/car-rental-app.git
+cd car-rental-app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Installation**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Install dependencies using yarn:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+yarn
+```
 
-## Learn More
+**Set Up Environment Variables**
 
-To learn more about Next.js, take a look at the following resources:
+Create a new file named `.env` in the root of your project and add the following content:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```env
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=""
+STRIPE_SECRET_KEY=""
+NEXT_PUBLIC_FRONTEND_URL=http://localhost:3000
+NEXT_PUBLIC_DATABASE_URL=""
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+NEXT_PUBLIC_SMTP_HOST=smtp.gmail.com
+NEXT_PUBLIC_SMTP_PORT=465
+NEXT_PUBLIC_SMTP_SERVICE=gmail
+NEXT_PUBLIC_SMTP_MAIL=
+NEXT_PUBLIC_SMTP_EMAIL=
+NEXT_PUBLIC_SMTP_PASSWORD=
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Running the Project using yarn**
+
+```bash
+yarn run dev
+```
